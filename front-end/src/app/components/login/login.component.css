@@ -1,0 +1,39 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 64px);
+    align-items: center;
+}
+
+.login {
+    width: 330px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.input-container i {
+    cursor: pointer;
+}
+
+.input-container button {
+    height: 50px;
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+.mat-raised-button {
+    background-color: #60c344;
+    color: white;
+}
+
+p span {
+    font-weight: 700;
+    cursor: pointer;
+}

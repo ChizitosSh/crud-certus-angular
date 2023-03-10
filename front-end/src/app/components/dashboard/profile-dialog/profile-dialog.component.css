@@ -1,0 +1,17 @@
+mat-radio-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+mat-radio-button {
+    margin: 5px 10px;
+}
+
+mat-radio-button img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px;
+}

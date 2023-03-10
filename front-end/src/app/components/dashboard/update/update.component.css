@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+mat-form-field,
+.title_name,
+.buttons-container,
+.mat-hint-container {
+    width: 100%;
+}
+
+.title_name {
+    display: flex;
+    gap: 10px;
+}
+
+.title_name mat-form-field:first-child {
+    width: 30%;
+}
+
+.title_name mat-form-field:last-child {
+    width: calc(70% - 10px);
+}
+
+/* Buttons */
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'top top'
+        'bottom bottom'
+        'bottom-left bottom-right';
+    gap: 10px;
+}
+
+.generar {
+    grid-area: top;
+    border-radius: 20px;
+}
+
+.perfil {
+    grid-area: bottom;
+    border-radius: 20px;
+}
+
+.regresar {
+    grid-area: bottom-left;
+}
+
+.guardar {
+    grid-area: bottom-right;
+}
+
+.mat-raised-button:last-child {
+    background-color: #60c344;
+    color: white;
+}
+
+/* Spinner */
+
+.spinner {
+    margin: 0 auto;
+    position: absolute;
+}
+
+/* Form transparent */
+
+.form_opacity {
+    opacity: 0;
+}
+
+/* Mensajes de error */
+
+mat-hint {
+    color: rgb(255, 54, 54);
+}
+
+.mat-hint-container {
+    font-size: 10.5px;
+    color: rgb(255, 54, 54);
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}

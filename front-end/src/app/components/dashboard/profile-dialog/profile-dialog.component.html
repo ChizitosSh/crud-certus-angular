@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Elije una foto de perfil</h1>
+<div mat-dialog-content>
+    <p>Hi {{ data.name }}</p>
+    <mat-radio-group aria-label="Select an option" [(ngModel)]="data.image">
+        <mat-radio-button *ngFor="let profile of profilePictures" [value]="profile.image">
+            <img src="{{ profile.image }}" alt="">
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [mat-dialog-close]="data.image" cdkFocusInitial>Ok</button>
+</div>
